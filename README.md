@@ -1,16 +1,35 @@
 # Questione o Mago
 
-Plataforma de apoio à tomada de decisões com IA. O usuário apresenta duas opções e um contexto; o Mago analisa e recomenda uma escolha, com justificativa detalhada.
+**Apoio à tomada de decisões com IA** · React · Supabase
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-A78BFA?style=flat-square)](LICENSE)
+
+O usuário apresenta duas opções e um contexto; o Mago analisa e recomenda uma escolha, com justificativa detalhada.
+
+🚧 **Estágio inicial.** Só a tela de login existe até agora, o restante ainda é planejamento.
+
+## Sobre o projeto
+
+Projeto pessoal pra estudar o fluxo de decisão assistida por IA: o usuário descreve duas opções e o contexto, e recebe uma recomendação estruturada (escolha, confiança, justificativa, pontos positivos, riscos e conselho final).
+
+## Escopo planejado
+
+- Cadastro e login
+- Criar decisão por texto (entrada por voz fica pra uma versão futura)
+- Recomendação da IA em formato estruturado
+- Histórico de decisões
+- Avaliação pedida na próxima visita (não é notificação ativa)
+- Dashboard com números simples
 
 ## Stack
 
-- React + Vite + TypeScript
-- Tailwind CSS v4
-- Supabase (auth + banco de dados)
-- TanStack Query (cache/estado de servidor)
-- Zustand (estado de cliente)
-- React Hook Form + Zod (formulários/validação)
-- React Router
+- **React** + **Vite** + **TypeScript**
+- **Tailwind CSS v4**
+- **Supabase**, autenticação e banco de dados
+- **TanStack Query**, cache e estado de servidor
+- **Zustand**, estado de cliente
+- **React Hook Form** + **Zod**, formulários e validação
+- **React Router**
 
 ## Estrutura de pastas
 
@@ -32,21 +51,25 @@ src/
   types/         # tipos de domínio (User, Decision, Evaluation...)
 ```
 
-## Setup
+## Como rodar
 
 ```bash
+git clone https://github.com/joaobatis1a/questione-o-mago.git
+cd questione-o-mago
 npm install
-cp .env.example .env   # preencher com as chaves do Supabase
+cp .env.example .env   # preencha com as chaves do Supabase
 npm run dev
 ```
 
-## Escopo do V1 (ver planejamento)
+## Autor
 
-- Cadastro/login
-- Criar decisão por texto (voz fica para V2)
-- Recomendação da IA com formato estruturado (escolha, confiança, justificativa, pontos positivos, riscos, conselho final)
-- Histórico de decisões
-- Avaliação solicitada na próxima visita do usuário (não é fluxo ativo/notificação)
-- Dashboard com números simples (sem gráficos ainda)
+**João Batista da Silva Neto**
+Desenvolvedor Full-stack (solo)
 
-Fora do V1: voz (entrada/saída), estatísticas com gráficos, animação de "pensamento mágico" no loading, categorias, comparações.
+- GitHub: [@joaobatis1a](https://github.com/joaobatis1a)
+- LinkedIn: [joao-batista-silva-neto](https://linkedin.com/in/joao-batista-silva-neto)
+- E-mail: [profissionalba1is1a@gmail.com](mailto:profissionalba1is1a@gmail.com)
+
+## Licença
+
+Distribuído sob a licença MIT. Veja [`LICENSE`](LICENSE) para mais detalhes.
